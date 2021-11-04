@@ -3,9 +3,17 @@ Write a program called sorted_words.rb. It should prompt the user for words and 
 =end
 
 # prompt user for input in a while loop until "enter" or blank
+while true do
+	puts "Enter a word: "
+	word = gets.chomp
 
+	if word == ''
+		break
+	end
+	
+	words.push(word)	
+end
 
 # use the built-in sort function
-
-
-# output array
+# and output array
+puts words.sort
